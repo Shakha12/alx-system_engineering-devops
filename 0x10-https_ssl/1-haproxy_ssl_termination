@@ -41,7 +41,7 @@ frontend shadrack-frontend
         default_backend shadrack-backend
 
 frontend shadrack-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/shadrack.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.shadrack.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend shadrack-backend
 
